@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Textillate Demo</title>
+  <!-- This is the plugin animation css -->
+  <link href="assets/animate.css" rel="stylesheet">
+  <!-- This is the plugin style css -->
+  <link href="assets/style.css" rel="stylesheet">
+
+</head>
+<body>
+  <!-- This is the plugin markup -->
+  <h1 class="tlt" data-in-effect="rollIn">Hello World...It's me again</h1>
+  <!-- This is jQuery, we nedd jQuery for most plugins -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="assets/jquery.fittext.js"></script>
+  <script src="assets/jquery.lettering.js"></script>
+  <!-- This is the plugin file -->
+  <script src="jquery.textillate.js"></script>
+<script>
+ $(function () {
+    $('.tlt').textillate({
+
+      in:{
+        effect:'pulse',
+        delayScale: 1.5,
+        delay:50,
+        sync:false,
+        shuffle:false,
+        reverse:false,
+        callback: function () {}
+      }
+    });
+    // Functions ENDS
+  });
+</script>
+
+</body>
+</html>
